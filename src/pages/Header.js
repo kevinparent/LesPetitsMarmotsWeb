@@ -12,7 +12,7 @@ export default class Header extends React.Component {
                   <li><Link to="/">Home</Link></li>
                     <Authenticated>
                       <li>
-                        <Link to="/profile">Profile ({this.state.user.givenName})</Link>
+                        <Link to="/profile">Profile</Link>
                       </li>
                     </Authenticated>
                 </ul>
