@@ -25,6 +25,10 @@ app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build/index.html'));
 });
 
+app.get('/', function(req, res) {
+    res.send('Hello');
+});
+
 app.on('stormpath.ready', function() {
     app.listen(3000, 'localhost', function(err) {
         if (err) {
